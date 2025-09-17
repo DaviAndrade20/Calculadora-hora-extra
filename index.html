@@ -5,37 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExtraPay</title>
     <style>
-        .fundo {
-            background-color: rgb(243, 243, 170);
-        }
+        /* Estilos para o cabeçalho */
         .cabecalho {
-            text-align: center;
-            line-height: 0.8;
+            background-color: black;
+            height: 140px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 35px;
         }
-        #titulo {
-            font-size: 55px;
-            margin-bottom: 10px;
+
+        /* Logo */
+        #logo  {
+            width: 200px;
+            height: 140px;
         }
-        #sub-texto {
-            font-size: 20px;
-            margin-bottom: 0px;
+
+        /* Estilizando os links de navegação */
+        .icones {
+            display: flex;
+            gap: 50px; /* Espaço entre os links */
+            margin-bottom: 12px;
         }
-        
+
+        .icones p {
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            font-family: sans-serif
+        }
+        .boas-vindas {
+            margin-left: 60px;
+            margin-top: 70px;
+        }
+
     </style>
 </head>
-<body class="fundo">
+<body style="margin: 0; background-color: black; color: white;">
     <header class="cabecalho">
-        <div>
-            <h1 id="titulo">ExtraPay</h1>
-            <p id="sub-texto">Sua calculadora de hora extra</p>
+        <h1>
+        <img src="image.png" alt="Logo ExtraPay" id="logo">
+        </h1>
+        <div class="icones">
+            <p>Início</p>
+            <p>Informações</p>
+            <p>Contato</p>
+            <p>Serviços</p>
         </div>
     </header>
     <main>
-        <section class="clt">
-            <h2>Consolidação das Leis do Trabalho</h2>
-            <p>Nesta seção, conheceremos um pouco sobre a história da CLT e o que o regulamento abrange.</p>
-            <a href="https://bd.camara.leg.br/bd/items/198fbacb-963e-496d-8224-e3dead2eb8a6">Site sobre CLT</a>
+        <section class="boas-vindas">
+            <h2>Bem vindo ao ExtraPay</h2>
+            <p></p>   
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
