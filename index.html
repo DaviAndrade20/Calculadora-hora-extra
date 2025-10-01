@@ -52,6 +52,9 @@
         }
         .introduction  {
            text-align: center;
+           background-color: rgb(211, 206, 206);
+           padding: 15px;
+           margin-bottom: 30px;
            
         }
         h2 {
@@ -61,6 +64,32 @@
         .introduction p {
             font-size: 15px;
             margin-top: 5px;
+            
+        }
+      
+        #conteudo1 {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        #conteudo2 {
+            display: flex;
+            justify-content: center;
+            gap: 7px;
+            margin-top: 10px;
+        }
+        #botoes {
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+        button {
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 8px 16px;
+            cursor: pointer;
+            color: white;
+            background-color: rgba(163, 159, 159, 0.959);
         }
 
     </style>
@@ -77,19 +106,35 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="introduction">
+    <section class="introduction">
       <h2>Calculadora de horas extras</h2>
       <p>Calcule o valor das horas extras de seus funcionários de forma gratuita, online e rápida</p>
-      </div>
-      <label for="qtdHoras">Horas mensais:</label>
-      <input type="number" id="qtdHoras" name="qtdHoras" step="0.1" placeholder="Carga horária mensal" required>
-      <label for="horas-extras">Horas extras:</label>
-      <input type="number" id="horas-extras" name="horas-extras" step="0.1" placeholder="Horas Extras" required>
-      <p>
-      <label for="valor-hora">Valor da hora</label>
-      <input type="number" id="valor-hora" name="valor-hora" placeholder="Valor da hora" required>
-      </p>
+    </section>
+
+    <form class="formulario" action="extrapay.js" method="post">
+        <div id="conteudo1">
+            <label for="qtdHoras">Hora mensal:</label>
+            <input type="number" id="qtdHoras" name="qtdHoras" step="0.1" placeholder="Carga horária mensal" value="220" required>
+
+            <label for="salario">Salário Bruto:</label>
+            <input type="number" id="salario" name="salario" step="0.1" placeholder="Ex: R$ 2.300,00" value="2300" required>
+        </div>
+     
+        <div id="conteudo2">
+            <label for="percentual-hora">% Hora extra:</label>
+            <input type="number" id="percentual-hora" name="percentual-hora" placeholder="percentual-hora" value="50" required>
+            <label for="horaextrafeita">Horas extras feitas:</label>
+            <input type="number" id="horaextrafeita" name="horaextrafeita" placeholder="10:00" value="10" required>
+        </div>
+
+        <div id="botoes">
+            <button type="submit">Calcular</button>
+            <button type="reset">Resetar</button>
+        </div>
+    </form>
+
     </main>
     <footer>
         <p>
